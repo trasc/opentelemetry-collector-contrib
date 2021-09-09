@@ -629,7 +629,6 @@ type testConsumerGroupSession struct {
 }
 
 func (t testConsumerGroupSession) Commit() {
-	panic("implement me")
 }
 
 var _ sarama.ConsumerGroupSession = (*testConsumerGroupSession)(nil)
@@ -647,7 +646,6 @@ func (t testConsumerGroupSession) GenerationID() int32 {
 }
 
 func (t testConsumerGroupSession) MarkOffset(string, int32, int64, string) {
-	panic("implement me")
 }
 
 func (t testConsumerGroupSession) ResetOffset(string, int32, int64, string) {
